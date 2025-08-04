@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  background: #000;
+}
+
+#start-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#222, #111);
+}
+
+#start-button, .play-button {
+  padding: 20px 40px;
+  font-size: 24px;
+  border: none;
+  border-radius: 12px;
+  background: #ff4444;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.play-button {
+  position: absolute;
+  transition: top 0.3s ease, left 0.3s ease;
+}
+
+#dragon {
+  position: absolute;
+  width: 100px;
+  transition: transform 0.1s linear;
+  pointer-events: none;
+}
+
+#black-hole {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, black, transparent);
+  pointer-events: none;
+}
